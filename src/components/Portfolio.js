@@ -1,4 +1,17 @@
 import React from 'react'
+import Avatar from './Avatar'
+var Scroll = require('react-scroll');
+
+var Link = Scroll.Link;
+var DirectLink = Scroll.DirectLink;
+var Element = Scroll.Element;
+var Events = Scroll.Events;
+var scroll = Scroll.animateScroll;
+var scrollSpy = Scroll.scrollSpy;
+
+var durationFn = function (deltaTop) {
+	return deltaTop;
+};
 
 const img = '';
 const cloudy = '';
@@ -36,7 +49,33 @@ class Portfolio extends React.Component {
 		this.state = {
 			props: propsObj
 		}
+		this.scrollToTop = this.scrollToTop.bind(this);
 	}
+
+
+
+	componentDidMount() {
+
+		Events.scrollEvent.register('begin', function () {
+			console.log("begin", arguments);
+		});
+
+		Events.scrollEvent.register('end', function () {
+			console.log("end", arguments);
+		});
+
+		scrollSpy.update();
+
+	}
+	scrollToTop() {
+		scroll.scrollToTop();
+	}
+	componentWillUnmount() {
+		Events.scrollEvent.remove('begin');
+		Events.scrollEvent.remove('end');
+	}
+
+
 
 	render() {
 		var props = this.state.props;
@@ -51,60 +90,37 @@ class Portfolio extends React.Component {
 						<div className='fontawesome-cog' id='icon'></div>
 						<ul>
 							<li>
-								<a href='#home'>Item 1</a>
+								<a href='#home' onClick={() => scroll.scrollTo(0)}>Me</a>
 							</li>
 							<li>
-								<a href='#about'>Item 2</a>
-							</li>
-							<li>
-								<a href='#portfolio'>Item 3</a>
-							</li>
-							<li>
-								<a href='#contact'>Item 4</a>
+								<a href='#portfolio' onClick={() => scroll.scrollToBottom()}>Portfolio</a>
 							</li>
 						</ul>
 					</div>
 				</nav>
 				<div id='home' className='vh sec1'>
-
 					<header >
 						<div className='container'>
+							<Avatar />
 							<h1>{header}</h1>
 							<h2>Full Stack Developer</h2>
 							<hr />
-							<section className='center'>
-								<a target='_blank' href={twitter} className='social-button'>
-									Medium
+							<a target='_blank' href={twitter} className='social-button'>
+								Medium
 								</a>
-								<a target='_blank' href={github} className='social-button'>
-									Github
+							<a target='_blank' href={github} className='social-button'>
+								Github
 								</a>
-								<a target='_blank' href={linkedIn} className='social-button'>
-									LinkedIn
+							<a target='_blank' href={linkedIn} className='social-button'>
+								LinkedIn
 								</a>
-								<a target='_blank' href={freeCodeCamp} className='social-button'>
-									Resume
+							<a target='_blank' href={freeCodeCamp} className='social-button'>
+								Resume
 								</a>
-							</section>
 						</div>
 					</header>
 					<div id='nav-bg'></div>
 				</div>{/*end sec1*/}
-				<div id='about' className='vh sec2' >
-					<div className='fluid description'>
-						<div>
-							<h3>Who Am I?</h3>
-							<p>{props.description.summary}</p>
-							<h3>My Passion</h3>
-							<p>{props.description.passion}</p>
-							<h3>Principles:</h3>
-							<p>{props.description.methodology}</p>
-							<h3>Languages/Libraries</h3>
-							<p>{props.description.tools}</p>
-						</div>
-						<img src={img} alt='avatar' />
-					</div>
-				</div>{/*end sec 2*/}
 				< div id='portfolio' className='vh sec3' >
 					<div className='fluid portfolio'>
 						<h3 className='portfolioHead'>Portfolio</h3>
@@ -140,9 +156,6 @@ class Portfolio extends React.Component {
 								</div>
 							</div>
 						</div>
-					</div>
-					<div id='contact' className='fluid contact-view'>
-						<p>Contact me at email@email.com</p>
 					</div>
 				</div>{/*end sec 3*/}
 			</div >
