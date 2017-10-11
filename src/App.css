@@ -7,15 +7,15 @@ body{
 	width: 100%
 }
 
-/* header{
-	margin: 4em 0 3em 0;
-} */
-
 header {
   position: relative;
-  background-color: #222;
-  padding: 8em 0 0;
-  z-index: 2;
+	z-index: 2;
+	padding-top: 2em;
+	padding-bottom: 6em;
+	height: 60vh;
+	margin-top: 150px;
+  background: #222;
+    
 }
 
 hr{
@@ -95,7 +95,6 @@ section{
 	position: fixed;
 	background: transparent;
 	background-color: transparent;
-	
 	height: 50px;
 	width: 100%;
 }
@@ -188,9 +187,9 @@ button:focus{
 }
 
 .sec3{
-	top: 200vh;
+	top: 100vh;
 	background: #111;
-	height: 600px;
+	height: 850px;
 }
 
 
@@ -244,6 +243,7 @@ button:focus{
 .container {
   margin: 0 auto;
 	padding: 0 2em;
+	text-align: center;
 }
 
 .caption{
