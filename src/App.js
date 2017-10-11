@@ -12,7 +12,7 @@ class App extends Component {
     $(window).on("scroll", function () {
       var scrollTop = $(this).scrollTop(),
         height = header.outerHeight(),
-        offset = height / 2,
+        offset = height / 1.25,
         calc = 1 - (scrollTop - offset + range) / range;
 
       header.css({ opacity: calc });

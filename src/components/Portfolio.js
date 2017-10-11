@@ -88,7 +88,7 @@ class Portfolio extends React.Component {
 							</section>
 						</div>
 					</header>
-
+					<div id='nav-bg'></div>
 				</div>{/*end sec1*/}
 				<div id='about' className='vh sec2' >
 					<div className='fluid description'>

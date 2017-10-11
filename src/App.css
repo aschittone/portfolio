@@ -4,9 +4,7 @@ body{
 	font-family: 'Ubuntu';
 	padding: 0;
 	color: #eef;
-	margin: auto;
-	width: 100%;
-	height: 100%;
+	width: 100%
 }
 
 /* header{
@@ -14,10 +12,10 @@ body{
 } */
 
 header {
+  position: relative;
   background-color: #222;
-  padding: 10em 0 8em;
-	z-index: 2;
-	height: 100vh;
+  padding: 8em 0 0;
+  z-index: 2;
 }
 
 hr{
@@ -152,31 +150,6 @@ section{
 	font-size: 1.25em;
 }
 
-
-/* .nav-button{
-	font-size: 1em;
-	height:50px;
-	font-family: 'Ubuntu_M';
-	position: relative;
-	border: none;
-	background: transparent;
-}
-
-
-.nav-button:hover{
-	background: #fff;
-}
-
-a:hover,button:hover{
-	cursor: pointer;
-	background: #333;
-	color: #eee;
-}
-
-a:active, button:active{
-	color: magenta;
-} */
-
 button:focus{
 	border: none;
 	outline: none;
@@ -217,6 +190,7 @@ button:focus{
 .sec3{
 	top: 200vh;
 	background: #111;
+	height: 600px;
 }
 
 
@@ -268,10 +242,8 @@ button:focus{
 }
 
 .container {
-  max-width: 60em;
-  min-width: 45em;
   margin: 0 auto;
-  padding: 0 2em;
+	padding: 0 2em;
 }
 
 .caption{
