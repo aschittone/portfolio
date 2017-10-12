@@ -13,7 +13,7 @@ header {
 	/* padding-top: 2em;
 	padding-bottom: 6em; */
 	height: 50%;
-	margin-top: 8%;
+	margin-top: 9%;
   background: #222;
     
 }
@@ -106,12 +106,13 @@ section{
 }
 
 .vh{
-	position: absolute;
 	margin: 0;
 	padding: 0;
 	top:50px;
 	left: 0;
 	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 17%;
 	/* background: rgba(100,10,100,0.9); */
 }
 

@@ -126,7 +126,17 @@ class Portfolio extends React.Component {
 					<div className='fluid portfolio'>
 						<h3 className='portfolioHead'>Portfolio</h3>
 						<Card />
+					</div>
+				</div>
+				< div id='portfolio' className='vh sec3' >
+					<div className='fluid portfolio'>
+						<h3 className='portfolioHead'>Portfolio</h3>
 						<Card />
+					</div>
+				</div>
+				< div id='portfolio' className='vh sec3' >
+					<div className='fluid portfolio'>
+						<h3 className='portfolioHead'>Portfolio</h3>
 						<Card />
 					</div>
 				</div>
