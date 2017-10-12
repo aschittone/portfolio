@@ -1,6 +1,7 @@
 import React from 'react'
 import Avatar from './Avatar'
 import Card from './Card'
+import Grid from 'material-ui/Grid';
 var Scroll = require('react-scroll');
 
 var Link = Scroll.Link;
@@ -94,7 +95,7 @@ class Portfolio extends React.Component {
 								<a href='#home' onClick={() => scroll.scrollTo(0)}>Me</a>
 							</li>
 							<li>
-								<a href='#portfolio' onClick={() => scroll.scrollToBottom()}>Portfolio</a>
+								<a href='#portfolio' onClick={() => scroll.scrollTo(document.querySelectorAll('.vh.sec3')[0].getBoundingClientRect().y)}>Portfolio</a>
 							</li>
 						</ul>
 					</div>
@@ -122,25 +123,32 @@ class Portfolio extends React.Component {
 					</header>
 					<div id='nav-bg'></div>
 				</div>{/*end sec1*/}
-				< div id='portfolio' className='vh sec3' >
+
+
+
+
+				<div id='portfolio' className='vh sec3' >
 					<div className='fluid portfolio'>
 						<h3 className='portfolioHead'>Portfolio</h3>
-						<Card />
+						<Grid container spacing={40}>
+							<Grid item xs >
+								<Card />
+							</Grid>
+							<Grid item xs >
+								<Card />
+							</Grid>
+							<Grid item xs >
+								<Card />
+							</Grid>
+						</Grid>
+
 					</div>
-				</div>
-				< div id='portfolio' className='vh sec3' >
-					<div className='fluid portfolio'>
-						<h3 className='portfolioHead'>Portfolio</h3>
-						<Card />
-					</div>
-				</div>
-				< div id='portfolio' className='vh sec3' >
-					<div className='fluid portfolio'>
-						<h3 className='portfolioHead'>Portfolio</h3>
-						<Card />
-					</div>
+
 				</div>
 			</div>
+
+
+
 
 		);
 	}

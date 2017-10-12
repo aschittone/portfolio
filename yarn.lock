@@ -6398,6 +6398,10 @@ selfsigned@^1.9.1:
   dependencies:
     node-forge "0.6.33"
 
+semantic-ui-shape@^2.2.12:
+  version "2.2.12"
+  resolved "https://registry.yarnpkg.com/semantic-ui-shape/-/semantic-ui-shape-2.2.12.tgz#ca7bacd71e6c8000f9869e8f01731c345551dca7"
+
 semver-diff@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/semver-diff/-/semver-diff-2.1.0.tgz#4bbb8437c8d37e4b0cf1a68fd726ec6d645d6d36"
