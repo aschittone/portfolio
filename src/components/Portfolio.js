@@ -1,5 +1,6 @@
 import React from 'react'
 import Avatar from './Avatar'
+import Card from './Card'
 var Scroll = require('react-scroll');
 
 var Link = Scroll.Link;
@@ -124,61 +125,16 @@ class Portfolio extends React.Component {
 				< div id='portfolio' className='vh sec3' >
 					<div className='fluid portfolio'>
 						<h3 className='portfolioHead'>Portfolio</h3>
-						<div className='images'>
-							<div className='pf-img'>
-								<img src={cloudy} alt='img' />
-								<div className='center caption'>
-									<br />
-									<div className='projectsHead'>Project Name</div>
-									<p>
-										<strong>library used</strong>
-									</p>
-								</div>
-							</div>
-							<div className='pf-img'>
-								<img src={cloudy} alt='img' />
-								<div className='center caption'>
-									<br />
-									<div className='projectsHead'>Project Name</div>
-									<p>
-										<strong>library used</strong>
-									</p>
-								</div>
-							</div>
-							<div className='pf-img'>
-								<img src={cloudy} alt='img' />
-								<div className='center caption'>
-									<br />
-									<div className='projectsHead'>Project Name</div>
-									<p>
-										<strong>library used</strong>
-									</p>
-								</div>
-							</div>
-						</div>
+						<Card />
+						<Card />
+						<Card />
 					</div>
-				</div>{/*end sec 3*/}
-			</div >
+				</div>
+			</div>
+
 		);
 	}
 }
 
 export default Portfolio
 
-	// < div className= 'fixed' >
-	// 	<strong className='brand'>Name</strong>
-	// 	<menu className='buttonGroup'>
-	// 		<button className='nav-button'>
-	// 			<a href='#home'>Home</a>
-	// 		</button>
-	// 		<button className='nav-button'>
-	// 			<a href='#about'>About</a>
-	// 		</button>
-	// 		<button className='nav-button'>
-	// 			<a href='#portfolio'>Portfolio</a>
-	// 		</button>
-	// 		<button className='nav-button'>
-	// 			<a href='#contact'>Contact</a>
-	// 		</button>
-	// 	</menu>
-	// 			</div >
