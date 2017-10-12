@@ -1,6 +1,5 @@
-
 body{
-	background: #222;
+	background: rgb(224, 221, 221);
 	font-family: 'Ubuntu';
 	padding: 0;
 	color: #eef;
@@ -16,6 +15,15 @@ header {
 	margin-top: 9%;
   background: #222;
     
+}
+
+#home {
+	background: #222;
+	height: 100%;
+	width: 100%;
+	
+
+	
 }
 
 hr{
@@ -110,6 +118,7 @@ section{
 	padding: 0;
 	top:50px;
 	left: 0;
+	height: 100vh;
 	width: 100%;
 	padding-top: 50px;
 	padding-bottom: 17%;
@@ -188,8 +197,8 @@ button:focus{
 
 .sec3{
 	top: 100vh;
-	background: #eee;
-	height: 90%;
+	background: #111;
+	height: 850px;
 }
 
 
@@ -223,7 +232,7 @@ button:focus{
 
 .portfolioHead{
 	font-size: 2.4em;
-	color: rgb(0, 0, 0);
+	color: lavender;
 }
 
 .projectsHead{
@@ -247,7 +256,7 @@ button:focus{
 }
 
 .caption{
-	color: rgb(0, 0, 0);
+	color: #fff;
 }
 
 .contact-view{
@@ -335,152 +344,4 @@ button:focus{
 		left: .5em;
 	}
 	
-}
-
-/*- Card container -*/
-.card-container {
-  position: relative;
-  margin: 32px auto;
-  max-width: 900px;
-  height: 500px;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-}
- 
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
- 
-/*- Card body -*/
-.card-body {
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: all .7s linear;
-  transition: all .7s linear;
-}
- 
-/*- Flipping the card -*/
-.card-container:hover .card-body {
-  -webkit-transform: rotateY(180deg);
-					transform: rotateY(180deg);
-					
-}
- 
-.card-container:hover > .card-body > .side-front {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: opacity 1s ease-in, visibility .75s linear;
-	transition: opacity 1s ease-in, visibility .75s linear;
-	
-	
-}
- 
-/*- Card sides -*/
-.card-side {
-  position: absolute;
-  top: 0;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  color: #212121;
-  background-color: #fff;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-	box-shadow: 0 10px 35px rgba(50, 50, 93, 0.1), 0 2px 15px rgba(0, 0, 0, 0.07);
-	-webkit-transform-style: preserve-3d;
-}
- 
-/*- Front side -*/
-.side-front [class^=col-xs]:first-of-type {
-  padding-left: 0;
-}
- 
-.side-front-content {
-  padding-top: 32px;
-  padding-right: 32px;
-  padding-bottom: 32px;
-}
- 
-/*- Back side -*/
-.side-back {
-  z-index: 2;
-  padding: 32px;
-  text-align: center;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
- 
-/*- Form -*/
-.card-form {
-  margin-top: 32px;
-}
- 
-.card-form .row + .row,
-.card-form .row + fieldset,
-.card-form fieldset + fieldset {
-  margin-top: 16px;
-}
- 
-input,
-textarea {
-  padding: 8px;
-  width: 100%;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid #eee;
-  border-left: 0;
-}
-input:focus,
-textarea:focus {
-  outline: 0;
-  border-bottom: 1px solid #0c81f6;
-}
- 
-textarea {
-  max-height: 80px;
-  resize: vertical;
-}
- 
-.btn-primary {
-  padding: 8px 16px;
-  font-size: 16px;
-  background-color: #0c81f6;
-  border: none;
-  box-shadow: 0 10px 35px rgba(50, 50, 93, 0.1), 0 2px 15px rgba(0, 0, 0, 0.07);
-  -webkit-transition: background-color .25s ease-in, box-shadow .25s ease-in;
-  transition: background-color .25s ease-in, box-shadow .25s ease-in;
-}
-.btn-primary:focus, .btn-primary:hover {
-  background-color: #56a7f9;
-  box-shadow: 0 18px 35px rgba(50, 50, 93, 0.1), 0 8px 15px rgba(0, 0, 0, 0.07);
-}
- 
-/*- Social links -*/
-.social-links {
-  padding: 0;
-  margin-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style-type: none;
-}
-.social-links li:nth-of-type(n+2) {
-  margin-left: 24px;
-}
-.social-links a {
-  color: #212121;
-  -webkit-transition: opacity .25s ease-in;
-  transition: opacity .25s ease-in;
-}
-.social-links a:focus, .social-links a:hover {
-  opacity: .5;
-}
-.social-links i {
-  font-size: 24px;
 }
