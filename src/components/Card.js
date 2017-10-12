@@ -141,37 +141,8 @@ var CardFront = function (_React$Component5) {
 					{ className: 'row' },
 					React.createElement(
 						'div',
-						{ className: 'col-xs-6' },
+						{ className: 'col-12 col-md-auto' },
 						React.createElement('img', { src: 'https://source.unsplash.com/w8YICpz1I10/358x458' })
-					),
-					React.createElement(
-						'div',
-						{ className: 'col-xs-6 side-front-content' },
-						React.createElement(
-							'h2',
-							null,
-							'Czech based'
-						),
-						React.createElement(
-							'h1',
-							null,
-							'UI/UX Designer'
-						),
-						React.createElement(
-							'p',
-							null,
-							'Andrey is driven by turning ideas into scalable and and empowering experiences that solve real life problems.'
-						),
-						React.createElement(
-							'p',
-							null,
-							'He is currently the founder of Dvorak Media. Previously, Andrey was a product designer at Dropbox.'
-						),
-						React.createElement(
-							'p',
-							null,
-							'Over the years, Michael has been priviledged to have worked with Adobe, Evernote, Square and more.'
-						)
 					)
 				)
 			)
