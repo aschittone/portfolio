@@ -28,7 +28,7 @@ const propsObj = {
 		github: 'https://github.com/aschittone',
 		medium: 'https://medium.com/@aschittone',
 		linkedIn: 'https://www.linkedin.com/in/andrew-schittone-800a9b4a/',
-		resume: 'https://drive.google.com/file/d/0BzTMCcfKvsXnaVFmNGgtd1BxZnM/view?usp=sharing'
+		resume: 'https://drive.google.com/file/d/0BzTMCcfKvsXnOEp2czgzdzNXY2M/view?usp=sharing'
 	}
 };
 
