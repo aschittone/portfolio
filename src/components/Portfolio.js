@@ -52,7 +52,7 @@ const info = {
 		img: 'https://lh3.googleusercontent.com/RFzXSENcdJFrgnH55AEDCcLDQlyLyZzdzmGIwRJsWf_DMv3KEUwP8Dr9xtYeAOMpQDrdPL2wIulwTC8=w1280-h680-rw',
 		desc: 'A modern replication of the classic multiplayer game: Battleship. Both players play on the same computer.',
 		demo: 'https://ship-battle.herokuapp.com',
-		github: ''
+		github: 'https://github.com/aschittone/battleship-full'
 	}
 }
 
