@@ -35,21 +35,21 @@ const propsObj = {
 const info = {
 	one: {
 		title: 'The Bottom Line',
-		img: 'https://lh5.googleusercontent.com/NMa-Od3edLCUkvy6s9RclnOAH1vGykOa2_BPq4jEh10ImkAcDkcrj1_sJNENsyXAr4ol3XHMlofrVYY=w1276-h636-rw',
+		img: 'https://drive.google.com/uc?id=0BzTMCcfKvsXnem1SS29TWGc3cGM',
 		desc: 'A simple way for investors to analyze potential cash flow, for rental properties they\'re looking to purchase.',
 		demo: 'https://the-bottom-line.herokuapp.com',
 		github: 'https://github.com/aschittone/the-bottom-line-frontend'
 	},
 	two: {
 		title: 'Breed MatchUp',
-		img: 'https://lh6.googleusercontent.com/L6B9Wd8fR-TR3aKZnh9qdmad29z3LipFEOipSv8gQ6rJV6sw7xRg_9pr_RDhfGdtmtgsZMprDelR0wE=w1276-h636-rw',
+		img: 'https://drive.google.com/uc?id=0BzTMCcfKvsXneE8yVHhBNmo3NjA',
 		desc: 'Enter your medium.com username and match your personality up with a dog breed that you\'ll fit well with.',
 		demo: 'https://breed-matchup.herokuapp.com',
 		github: 'https://github.com/aschittone/breed-matchup-frontend'
 	},
 	three: {
 		title: 'Battleship',
-		img: 'https://lh6.googleusercontent.com/CziCxDruAvQ1nvRFTbpofTp0Yh0dYZKk4PL-5pWJYEAmxF_iW48C9FzihdtE0eNWU217ZG0BCZGHEuA=w1276-h636-rw',
+		img: 'https://drive.google.com/uc?id=0BzTMCcfKvsXnZG85enZuVTl0cTA',
 		desc: 'A modern replication of the classic multiplayer game: Battleship. Both players play on the same computer.',
 		demo: 'https://ship-battle.herokuapp.com',
 		github: 'https://github.com/aschittone/battleship-full'
