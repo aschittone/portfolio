@@ -24,25 +24,37 @@ const vase = '';
 const propsObj = {
 
 	header: 'Andrew Schittone',
-
-	description: {
-
-		summary: "I'm a Frontend Web Developer and entrepenuer based in Seattle.",
-		passion: "My passion is to use technology to effect positive social change.",
-		methodology: 'Test-driven development,clean maintainable code',
-		tools: "Javascript, jQuery, React, Backbone, Bootstrap"
-
-	},
 	socialUrls: {
-
-		github: 'https://github.com/justindobbs',
-		twitter: 'https://twitter.com/justinldobbs',
-		linkedIn: 'https://www.linkedin.com/pub/justin-dobbs/99/a6b/b92',
-		freeCodeCamp: 'https://freecodecamp.com/justindobbs'
-
+		github: 'https://github.com/aschittone',
+		medium: 'https://medium.com/@aschittone',
+		linkedIn: 'https://www.linkedin.com/in/andrew-schittone-800a9b4a/',
+		resume: 'https://drive.google.com/file/d/0BzTMCcfKvsXnaVFmNGgtd1BxZnM/view?usp=sharing'
 	}
-
 };
+
+const info = {
+	one: {
+		title: 'The Bottom Line',
+		img: 'https://lh3.googleusercontent.com/Mq2qCyWvrSat8rvuGEDFHZMYbCADmBoTPsp81WtJPoxmkNG4iyGkPF71UzrSkuY7YjqqVrgTUSPcPpo=w1280-h680-rw',
+		desc: 'A simple way for investors to analyze potential cash flow, for rental properties they\'re looking to purchase.',
+		demo: 'https://the-bottom-line.herokuapp.com',
+		github: 'https://github.com/aschittone/the-bottom-line-frontend'
+	},
+	two: {
+		title: 'Breed MatchUp',
+		img: 'https://lh4.googleusercontent.com/NagRnALQibzFyRh-2fi4SZLb1ZszXY3VVrv66ZFALXi7cTmjO4gMNz3Gy_eJRtUoigUn18KwO3bnhxM=w1280-h680-rw',
+		desc: 'Enter your medium.com username and match your personality up with a dog breed that you\'ll fit well with.',
+		demo: 'https://breed-matchup.herokuapp.com',
+		github: 'https://github.com/aschittone/breed-matchup-frontend'
+	},
+	three: {
+		title: 'Battleship',
+		img: 'https://lh3.googleusercontent.com/RFzXSENcdJFrgnH55AEDCcLDQlyLyZzdzmGIwRJsWf_DMv3KEUwP8Dr9xtYeAOMpQDrdPL2wIulwTC8=w1280-h680-rw',
+		desc: 'A modern replication of the classic multiplayer game: Battleship. Both players play on the same computer.',
+		demo: 'https://ship-battle.herokuapp.com',
+		github: ''
+	}
+}
 
 class Portfolio extends React.Component {
 
@@ -82,7 +94,7 @@ class Portfolio extends React.Component {
 	render() {
 		var props = this.state.props;
 		var that = this;
-		var { twitter, github, linkedIn, freeCodeCamp } = this.state.props.socialUrls;
+		var { medium, github, linkedIn, resume } = this.state.props.socialUrls;
 		var header = this.state.props.header;
 
 		return (
@@ -107,7 +119,7 @@ class Portfolio extends React.Component {
 							<h1>{header}</h1>
 							<h2>Full Stack Developer</h2>
 							<hr />
-							<a target='_blank' href={twitter} className='social-button'>
+							<a target='_blank' href={medium} className='social-button'>
 								Medium
 								</a>
 							<a target='_blank' href={github} className='social-button'>
@@ -116,7 +128,7 @@ class Portfolio extends React.Component {
 							<a target='_blank' href={linkedIn} className='social-button'>
 								LinkedIn
 								</a>
-							<a target='_blank' href={freeCodeCamp} className='social-button'>
+							<a target='_blank' href={resume} className='social-button'>
 								Resume
 								</a>
 						</div>
@@ -124,21 +136,18 @@ class Portfolio extends React.Component {
 					<div id='nav-bg'></div>
 				</div>{/*end sec1*/}
 
-
-
-
 				<div id='portfolio' className='vh sec3' >
 					<div className='fluid portfolio'>
 						<h3 className='portfolioHead'>Portfolio</h3>
 						<Grid container spacing={40}>
 							<Grid item xs >
-								<Card />
+								<Card info={info.one} type={1} />
 							</Grid>
 							<Grid item xs >
-								<Card />
+								<Card info={info.two} type={2} />
 							</Grid>
 							<Grid item xs >
-								<Card />
+								<Card info={info.three} type={3} />
 							</Grid>
 						</Grid>
 
