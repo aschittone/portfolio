@@ -35,21 +35,21 @@ const propsObj = {
 const info = {
 	one: {
 		title: 'The Bottom Line',
-		img: 'https://lh3.googleusercontent.com/Mq2qCyWvrSat8rvuGEDFHZMYbCADmBoTPsp81WtJPoxmkNG4iyGkPF71UzrSkuY7YjqqVrgTUSPcPpo=w1280-h680-rw',
+		img: 'https://photos-5.dropbox.com/t/2/AADCGGLlbLlxQG40QuTOoHTS9lOaaggSPNpXCqWCIO6hGQ/12/39354217/png/32x32/3/1507881600/0/2/Screen%20Shot%202017-10-12%20at%209.23.55%20PM.png/EMi-gR4Y14EDIAIoAg/wPYdwr15_Kj1i5qe9wsJtYqG1xGRN2XtnzJlJzMr0Mk?dl=0&size=1280x960&size_mode=3',
 		desc: 'A simple way for investors to analyze potential cash flow, for rental properties they\'re looking to purchase.',
 		demo: 'https://the-bottom-line.herokuapp.com',
 		github: 'https://github.com/aschittone/the-bottom-line-frontend'
 	},
 	two: {
 		title: 'Breed MatchUp',
-		img: 'https://lh4.googleusercontent.com/NagRnALQibzFyRh-2fi4SZLb1ZszXY3VVrv66ZFALXi7cTmjO4gMNz3Gy_eJRtUoigUn18KwO3bnhxM=w1280-h680-rw',
+		img: 'https://photos-2.dropbox.com/t/2/AACQ9h_r_sHjJjGBncnsqYcmD1BkR0lMTElz2PRX-s_0WQ/12/39354217/png/32x32/3/1507881600/0/2/Screen%20Shot%202017-10-12%20at%209.25.45%20PM.png/EMi-gR4Y14EDIAIoAg/8xQA0Uo5fuzZVCwXU9Lz4UOdRx2OReKo2ysNWvlmVr4?dl=0&size=1280x960&size_mode=3',
 		desc: 'Enter your medium.com username and match your personality up with a dog breed that you\'ll fit well with.',
 		demo: 'https://breed-matchup.herokuapp.com',
 		github: 'https://github.com/aschittone/breed-matchup-frontend'
 	},
 	three: {
 		title: 'Battleship',
-		img: 'https://lh3.googleusercontent.com/RFzXSENcdJFrgnH55AEDCcLDQlyLyZzdzmGIwRJsWf_DMv3KEUwP8Dr9xtYeAOMpQDrdPL2wIulwTC8=w1280-h680-rw',
+		img: 'https://photos-2.dropbox.com/t/2/AACeII3hpNTu22opxuAxuopy5ec42HSmyGwm_rCmpRhAGQ/12/39354217/png/32x32/3/1507881600/0/2/Screen%20Shot%202017-10-12%20at%209.25.28%20PM.png/EMi-gR4Y14EDIAIoAg/YbB1D82bQfhb2X5sZ8OYaGbMgmqospYTkAOi-cWThrE?dl=0&size=1280x960&size_mode=3',
 		desc: 'A modern replication of the classic multiplayer game: Battleship. Both players play on the same computer.',
 		demo: 'https://ship-battle.herokuapp.com',
 		github: 'https://github.com/aschittone/battleship-full'
