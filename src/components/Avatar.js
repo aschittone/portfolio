@@ -23,7 +23,7 @@ function ImageAvatars(props) {
 	return (
 		<div className={classes.row}>
 			<Avatar
-				src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAA29AAAAJDg3YzQ1NWFlLTVmMGItNDNjYy04ZDZjLTMzOGNhMGIwYWEyMA.jpg"
+				src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAMAAQDuAAgAAQAAAAAAABH3AAAAJGNjM2Q3ODNlLTE1OWQtNGU5Yy1hOTBlLTE0MWI2NjhhZDkyMg.bin"
 				className={classNames(classes.avatar, classes.bigAvatar)}
 			/>
 		</div>
